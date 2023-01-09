@@ -25,12 +25,12 @@ while (i < myList.length) {
     // document.writeln(myList[i] + "<br>");
     // console.log("lista", myList[i]);
 
-    // let newLi = document.createElement("li");
-    // newLi.innerHTML = myList[i];
-    // itemsList.append(newLi);
+    // itemsList.innerHTML += `<li>${myList[i]}</li>`;
     // console.log("lista", myList[i]);
 
-    itemsList.innerHTML += `<li>${myList[i]}</li>`;
+    let newLi = document.createElement("li");
+    newLi.innerHTML = myList[i];
+    itemsList.append(newLi);
     console.log("lista", myList[i]);
 
     i++;
